@@ -1,55 +1,12 @@
-// import React, { useEffect, useState } from 'react'
-// import axios from 'axios'
-
-// const PlaceOrder = () => {
-//   const [id, setid] = useState()
-//   const [name, setname] = useState()
-//   const [quantity, setQuantity] = useState()
-//   const [items, setItems] = useState()
-//   useEffect( async () => {
-//     try {
-//       const resp = await axios.get('http://localhost/4000/items');
-//       console.log(resp.data);
-//   } catch (err) {
-//       // Handle Error Here
-//       console.error(err);
-//   }
-//   }, [])
-
-//   return (
-//     <div>
-//       <select className="form-select" aria-label="Default select example">
-//         {items.map((item)=>{
-//           <option key={item.id} value={item.name}>
-//           {item.name}
-//           </option>
-//         })}
-//       </select>
-//     </div>
-//   )
-// }
-
-// export default PlaceOrder
-
-import React, { useState } from 'react'
-export const CustomDropdown = (props) => (
-  <div className="form-group">
-    <select className="form-control" onChange={props.onChange}>
-      <option defaultValue>Select {props.name}</option>
-      {props.items.map((item) => (
-        <option key={item.id} value={item.id}>
-          {item.name}
-        </option>
-      ))}
-    </select>
-  </div>
-)
+import axios from 'axios'
+import React from 'react'
 export default class PlaceOrder extends React.Component {
   constructor() {
     super()
     this.state = {
       items: [],
-      value: '',
+      name: "",
+      quantity: ""
     }
   }
   componentDidMount() {
@@ -57,19 +14,43 @@ export default class PlaceOrder extends React.Component {
       .then((response) => response.json())
       .then((res) => this.setState({ items: res }))
   }
+
   onChange = (event) => {
-    this.setState({ value: event.target.value })
-    console.log(this.value)
-    let x = event.target.value
+    console.log("onchange call")
+    if(event.target.name === "name"){
+      this.setState({ name: event.target.value })
+      console.log(this.state.name)
+    } else {
+      this.setState({ quantity: event.target.value })
+      console.log(this.state.quantity)
+    }
+    // console.log(this.state)
+    // let x = event.target.value
   }
 
-  handleSubmit = () => {}
+  handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(this.state)
+    axios.post("http://localhost:4000/users/login", {name: this.state.name, quantity: this.state.quantity}, { Headers: {"Authorization" : `Bearer ${localStorage.getItem('token')}`} })
+    .then(response => console.log(response))
+    .catch(error => alert(error))
+  }
 
   render() {
     return (
       <div className="container">
-        <form>
-          <CustomDropdown items={this.state.items} onChange={this.onChange} />
+        <form onSubmit={this.handleSubmit}>
+          {/* <CustomDropdown items={this.state.items} onChange={this.onChange} /> */}
+          <div className="form-group">
+            <select className="form-control" value={this.state.name} id="name" name='name' onChange={this.onChange}>
+              <option defaultValue>Select {this.state.name}</option>
+              {this.state.items.map((item) => (
+                <option key={item.id} value={item.name}>
+                  {item.name}
+                </option>
+              ))}
+            </select>
+          </div>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">
               Quantity
@@ -77,7 +58,10 @@ export default class PlaceOrder extends React.Component {
             <input
               type="number"
               class="form-control"
-              id="exampleInputEmail1"
+              id="exampleInputEmail1 quantity"
+              name='quantity'
+              value={this.state.quantity}
+              onChange={this.onChange}
               aria-describedby="emailHelp"
             />
             <div id="emailHelp" class="form-text">
@@ -88,7 +72,7 @@ export default class PlaceOrder extends React.Component {
             Submit
           </button>
 
-      </form>
+        </form>
       </div>
     )
   }

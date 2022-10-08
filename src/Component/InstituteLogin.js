@@ -22,6 +22,7 @@ const InstituteLogin = () => {
           console.log("valid")
           localStorage.setItem('token', response.data.accessToken)
           localStorage.setItem('name', response.data.user.name)
+          localStorage.setItem('userid', response.data.user._id)
           window.location.href="/institutedeshboard/home";
         }
       })  
