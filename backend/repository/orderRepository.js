@@ -1,4 +1,6 @@
 const Order = require("../src/models/order");
+// const User = require("../src/models/user");
+
 
 const createOrder = async (req) => {
   function makeToken(length) {
@@ -31,6 +33,7 @@ const readOrder = async (req, res) => {
   try {
     _id = req.user._id;
     const orders = await Order.find({ owner: _id });
+    // const institute = await User.find({}, { _id: 0, name: 1 });
     return [200, orders];
   } catch (e) {
     return [500, e];
@@ -68,9 +71,32 @@ const deleteOrder = async (req) => {
   }
 };
 
+const confirmedOrder = async (req) => {
+  try {
+    const order = await Order.find({ confirmed: true });
+    if (!order) return [404, { error: "confirmed order list is empty" }];
+    return [200, order];
+  } catch (e) {
+    return [500, e];
+  }
+};
+
+const pendingOrder = async (req) => {
+  try {
+    const order = await Order.find();
+    console.log(order);
+    if (!order) return [404, { error: "pending order list is empty" }];
+    return [200, order];
+  } catch (e) {
+    return [500, e];
+  }
+};
+
 module.exports = {
   createOrder,
   readOrder,
   updateOrder,
   deleteOrder,
+  confirmedOrder,
+  pendingOrder,
 };

@@ -5,7 +5,7 @@ const router = new express.Router();
 const userController = require("../controllers/userController");
 
 const use = (fn) => (req, res, next) =>
-	Promise.resolve(fn(req, res, next)).catch(next);
+  Promise.resolve(fn(req, res, next)).catch(next);
 
 //Create User
 router.post("/users", use(userController.createUser));
@@ -27,14 +27,16 @@ router.patch("/users/me", auth, userController.updateUser);
 
 //forget password
 router.post(
-	"/users/me/forgetpassword",
-	auth,
-	userController.forgotPasswordUser
+  "/users/me/forgetpassword",
+  auth,
+  userController.forgotPasswordUser
 );
 
 router.post("/user/me/verifyOtp", auth, userController.verifyPasswordUser);
 
 //Deleting an User
 router.delete("/users/me", auth, userController.deleteUser);
+
+router.get("/intituteList", userController.instituteList);
 
 module.exports = router;

@@ -205,6 +205,17 @@ const deleteUser = async (req) => {
   }
 };
 
+const instituteList = async (req) => {
+  try {
+    const institute = await User.find({}, { _id: 0, name: 1 });
+    console.log(institute);
+    return [200, institute];
+  } catch (e) {
+    logger.error("Error occurred in user deletion");
+    return [500, e];
+  }
+};
+
 module.exports = {
   createUser,
   loginUser,
@@ -215,4 +226,5 @@ module.exports = {
   forgotPasswordUser,
   verifyPasswordUser,
   deleteUser,
+  instituteList,
 };

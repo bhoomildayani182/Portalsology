@@ -31,9 +31,9 @@ export default class PlaceOrder extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault()
     console.log(this.state)
-    axios.post("http://localhost:4000/users/login", {name: this.state.name, quantity: this.state.quantity}, { Headers: {"Authorization" : `Bearer ${localStorage.getItem('token')}`} })
+    axios.post("http://localhost:4000/order", {name: this.state.name, qty: this.state.quantity}, { headers: {"Authorization" : localStorage.getItem('token')} })
     .then(response => console.log(response))
-    .catch(error => alert(error))
+    .catch(error => console.log(error))
   }
 
   render() {

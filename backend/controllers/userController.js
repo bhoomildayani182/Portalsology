@@ -123,6 +123,18 @@ const deleteUser = async (req, res) => {
   }
 };
 
+const instituteList = async (req, res) => {
+  try {
+    //Processing
+    const result = await repo.instituteList(req);
+
+    // Sending Response
+    helpers.successResponse(result[0], result[1], res);
+  } catch (error) {
+    helpers.errorResponse(403, error.details[0].message, res);
+  }
+};
+
 module.exports = {
   deleteUser,
   createUser,
@@ -133,4 +145,5 @@ module.exports = {
   updateUser,
   forgotPasswordUser,
   verifyPasswordUser,
+  instituteList,
 };

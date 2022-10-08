@@ -117,51 +117,82 @@
 [info] 2022-10-07T22:20:07.697Z User Authenticated!
 [info] 2022-10-07T22:26:09.504Z User Authenticated!
 [info] 2022-10-07T22:27:08.628Z User Authenticated!
-[error] 2022-10-08T04:04:24.153Z Issue occurred in user authentication!
-[error] 2022-10-08T04:08:40.060Z Issue occurred in user authentication!
-[info] 2022-10-08T04:09:15.019Z User Authenticated!
-[info] 2022-10-08T04:09:15.225Z User Authenticated!
-[error] 2022-10-08T04:20:32.074Z Issue occurred in user authentication!
-[error] 2022-10-08T04:25:31.979Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:24.451Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:25.918Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:37.744Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:47.042Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:48.193Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:48.517Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:48.669Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:48.829Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:48.982Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:49.110Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:49.237Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:49.372Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:49.527Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:49.674Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:49.840Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:50.002Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:50.157Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:50.309Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:50.479Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:50.633Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:50.811Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:50.980Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:51.147Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:51.311Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:51.475Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:51.633Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:51.801Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:51.943Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:52.092Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:52.244Z Issue occurred in user authentication!
-[error] 2022-10-08T04:28:52.370Z Issue occurred in user authentication!
-[error] 2022-10-08T04:29:08.393Z Issue occurred in user authentication!
-[error] 2022-10-08T04:29:09.672Z Issue occurred in user authentication!
-[error] 2022-10-08T04:29:10.475Z Issue occurred in user authentication!
-[error] 2022-10-08T04:29:10.649Z Issue occurred in user authentication!
-[error] 2022-10-08T04:29:10.822Z Issue occurred in user authentication!
-[error] 2022-10-08T04:38:05.579Z Issue occurred in user authentication!
-[error] 2022-10-08T04:38:40.092Z Issue occurred in user authentication!
-[error] 2022-10-08T04:39:02.162Z Issue occurred in user authentication!
-[error] 2022-10-08T04:39:29.100Z Issue occurred in user authentication!
-[info] 2022-10-08T04:39:46.088Z User Authenticated!
-[error] 2022-10-08T04:57:25.760Z Issue occurred in user authentication!
+[info] 2022-10-08T03:23:24.041Z User Authenticated!
+[info] 2022-10-08T03:23:43.608Z User Authenticated!
+[info] 2022-10-08T03:26:58.063Z User Authenticated!
+[error] 2022-10-08T03:26:58.067Z Error occurred in user deletion
+[info] 2022-10-08T03:27:25.276Z User Authenticated!
+[error] 2022-10-08T03:27:25.281Z Error occurred in user deletion
+[info] 2022-10-08T03:28:49.472Z User Authenticated!
+[info] 2022-10-08T03:33:38.240Z User Authenticated!
+[info] 2022-10-08T03:34:09.228Z User Authenticated!
+[error] 2022-10-08T03:34:09.252Z Error occurred in user deletion
+[info] 2022-10-08T03:35:08.057Z User Created
+[info] 2022-10-08T03:35:13.159Z User Created
+[error] 2022-10-08T03:35:14.555Z Message failed: 554 5.2.0 STOREDRV.Submission.Exception:OutboundSpamException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade. OutboundSpamException: WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade.[EndDiagnosticData] [Hostname=SL2P216MB1079.KORP216.PROD.OUTLOOK.COM]
+[info] 2022-10-08T03:35:15.632Z User Created
+[info] 2022-10-08T03:35:18.663Z User Created
+[error] 2022-10-08T03:35:19.171Z Message failed: 554 5.2.0 STOREDRV.Submission.Exception:OutboundSpamException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade. OutboundSpamException: WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade.[EndDiagnosticData] [Hostname=SL2P216MB1079.KORP216.PROD.OUTLOOK.COM]
+[error] 2022-10-08T03:35:21.426Z Message failed: 554 5.2.0 STOREDRV.Submission.Exception:OutboundSpamException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade. OutboundSpamException: WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade.[EndDiagnosticData] [Hostname=SL2P216MB1079.KORP216.PROD.OUTLOOK.COM]
+[error] 2022-10-08T03:35:27.344Z Message failed: 554 5.2.0 STOREDRV.Submission.Exception:OutboundSpamException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade. OutboundSpamException: WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade.[EndDiagnosticData] [Hostname=SL2P216MB1079.KORP216.PROD.OUTLOOK.COM]
+[info] 2022-10-08T03:35:32.578Z User Authenticated!
+[info] 2022-10-08T03:35:48.236Z User Authenticated!
+[info] 2022-10-08T04:04:24.885Z User Authenticated!
+[info] 2022-10-08T04:05:40.604Z User Authenticated!
+[info] 2022-10-08T04:05:55.647Z User Authenticated!
+[info] 2022-10-08T04:15:21.455Z User Authenticated!
+[info] 2022-10-08T04:15:39.749Z User Authenticated!
+[info] 2022-10-08T04:15:47.679Z User Authenticated!
+[info] 2022-10-08T04:15:54.223Z User Authenticated!
+[info] 2022-10-08T04:15:57.026Z User Authenticated!
+[info] 2022-10-08T04:17:28.975Z User Authenticated!
+[info] 2022-10-08T04:29:03.655Z User Authenticated!
+[info] 2022-10-08T04:30:35.289Z User Authenticated!
+[info] 2022-10-08T05:01:49.022Z User Authenticated!
+[info] 2022-10-08T05:01:50.430Z User Authenticated!
+[info] 2022-10-08T05:01:53.686Z User Authenticated!
+[info] 2022-10-08T05:36:38.045Z User Created
+[error] 2022-10-08T05:36:58.240Z Invalid login: 535 5.7.139 Authentication unsuccessful, account locked. Contact your administrator. [PN3PR01CA0001.INDPRD01.PROD.OUTLOOK.COM]
+[error] 2022-10-08T06:14:36.497Z Issue occurred in user authentication!
+[error] 2022-10-08T06:14:47.506Z Issue occurred in user authentication!
+[info] 2022-10-08T06:15:28.963Z User Authenticated!
+[info] 2022-10-08T06:15:37.967Z User Authenticated!
+[info] 2022-10-08T06:16:01.144Z User Authenticated!
+[info] 2022-10-08T06:16:18.886Z User Authenticated!
+[info] 2022-10-08T06:16:47.490Z User Authenticated!
+[info] 2022-10-08T06:18:13.076Z User Authenticated!
+[error] 2022-10-08T06:20:58.870Z Issue occurred in user authentication!
+[error] 2022-10-08T06:22:13.379Z Issue occurred in user authentication!
+[error] 2022-10-08T06:22:57.920Z Issue occurred in user authentication!
+[error] 2022-10-08T06:24:24.581Z Issue occurred in user authentication!
+[info] 2022-10-08T07:05:44.939Z User Authenticated!
+[info] 2022-10-08T07:08:20.489Z User Authenticated!
+[info] 2022-10-08T07:09:30.798Z User Authenticated!
+[info] 2022-10-08T07:12:32.532Z User Authenticated!
+[info] 2022-10-08T07:25:34.551Z User Authenticated!
+[error] 2022-10-08T07:29:43.312Z Issue occurred in user authentication!
+[error] 2022-10-08T07:29:43.314Z Issue occurred in user authentication!
+[error] 2022-10-08T07:30:40.394Z Issue occurred in user authentication!
+[error] 2022-10-08T07:30:40.396Z Issue occurred in user authentication!
+[info] 2022-10-08T07:31:17.797Z User Authenticated!
+[info] 2022-10-08T07:31:48.319Z User Authenticated!
+[info] 2022-10-08T07:33:47.319Z User Authenticated!
+[info] 2022-10-08T07:33:47.328Z User Authenticated!
+[info] 2022-10-08T07:34:34.320Z User Authenticated!
+[info] 2022-10-08T07:36:44.531Z User Authenticated!
+[info] 2022-10-08T07:36:44.539Z User Authenticated!
+[info] 2022-10-08T07:36:59.324Z User Authenticated!
+[info] 2022-10-08T07:36:59.331Z User Authenticated!
+[info] 2022-10-08T07:43:14.324Z User Authenticated!
+[info] 2022-10-08T07:43:14.329Z User Authenticated!
+[info] 2022-10-08T07:43:50.317Z User Authenticated!
+[info] 2022-10-08T07:43:54.192Z User Authenticated!
+[info] 2022-10-08T07:43:54.198Z User Authenticated!
+[info] 2022-10-08T07:44:31.374Z User Authenticated!
+[info] 2022-10-08T07:44:31.381Z User Authenticated!
+[info] 2022-10-08T07:51:42.420Z User Authenticated!
+[info] 2022-10-08T07:51:42.428Z User Authenticated!
+[error] 2022-10-08T08:15:42.056Z Issue occurred in user authentication!
+[error] 2022-10-08T08:15:42.060Z Issue occurred in user authentication!
+[info] 2022-10-08T08:16:02.217Z User Authenticated!
+[info] 2022-10-08T08:16:02.230Z User Authenticated!

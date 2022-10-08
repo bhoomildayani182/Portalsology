@@ -5,7 +5,7 @@ const addItem = joi.object({
 
   price: joi.number(),
 
-  id: joi.string().min(3)
+  qty: joi.number().integer(),
 });
 
 const updateItem = joi.object({

@@ -39,7 +39,7 @@ const userSchema = new mongoose.Schema(
     },
     registrationNo: {
       type: Number,
-      required: true,
+      // required: true,
       default: 0,
     },
     tokens: [

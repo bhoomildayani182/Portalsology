@@ -13,12 +13,7 @@ const itemSchema = new mongoose.Schema(
       required: true,
       default: 0,
     },
-    id: {
-      type: String,
-      required: true,
-      unique: true,
-      trim: true
-    },
+    
   },
   {
     timestamps: true,
